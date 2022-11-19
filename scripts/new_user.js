@@ -6,6 +6,13 @@ const base = "http://localhost:8083/api/";
     const password = document.getElementById("password");
     const passwordAgain = document.getElementById("passwordAgain");
     const message = document.getElementById("message");
+    const exists = document.getElementById("exists");
+
+    username.addEventListener("keyup", e=>{
+        fetch(base + "username_available/"+username.value).then(r => r.json()).then(result=>{
+            exists.innerHTML = "Available:" + result.available
+        });
+    });
 
     function clearMessage() {
         message.innerHTML = "";

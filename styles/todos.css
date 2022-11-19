@@ -6,4 +6,10 @@
     min-height: 20vw;
     display: inline-block;
     margin: 1em;
+    position: relative;
+}
+.complete{
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
