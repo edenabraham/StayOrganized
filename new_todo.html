@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>New Todo</h1>
+    <label>
+        Description:<br>
+        <textarea id="description"></textarea>
+    </label><br><br>
+    <label>
+        Owner (user):<br>
+        <select id="users">
+            <option value="">Select a user</option>
+        </select>
+    </label><br><br>
+    <label>
+        Category:<br>
+        <select id="category">
+            <option value="">Select a category</option>
+        </select>
+    </label><br><br>
+    <label>
+        Priority:<br>
+        <select id="priority">
+            <option value="">Select a priority</option>
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+        </select>
+    </label><br><br>
+    <label>
+        Deadline:<br>
+        <input id="deadline" placeholder="YYYY-MM-DD">
+    </label><br><br>
+    <button id="add">Add</button>
+</body>
+<script src="scripts/new_todo.js"></script>
+</html>
